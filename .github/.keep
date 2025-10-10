@@ -1,0 +1,40 @@
+ # first array = 1, 2, 3, 4, 5, 6
+ # second array = A, B, C, D, E, F 
+# inpit enter what number
+# at posityion input write what is in the second array
+# if number is greater than the total positions or greatest postion of either the arrays then:
+# print not found
+first_array = [10, 21, 30, 43, 53]
+second_array = ["A", "B", "C", "D", "E", "F"]
+# number = int(input("Enter what number of the alphabet you want: "))
+# if number > len(first_array):
+#     print("Letter not found. ")
+# else:
+#     print(second_array[number - 1])
+
+# to find the top student, i need to find the hiughest mark in the score array and then use the counter to find what position i am on to then get the student's name from the name array
+# to print pairs, i need to print the value of both arrays at the same position and make the position a variabel so i incraese it every time or if the position is less than or equal to the len of the arrays then i print it and then incraese by one
+# to count passes use the function and if the score equals over 50 then incraese the total passes by one 
+# to allow search for names, you want to use a linear search 
+
+#most_liked_index = 0 # set a counter so you know what position you are at
+#for index in range(1, len[first_array]): # youy want top search that array for the length of the array so count from 1 up to the final position of the array, this is how many times it will iterate through the array
+ #   if first_array[index] > first_array[most_liked_index]: 
+  #      most_liked_index = index
+
+student_names = ["Larry", "Barry", "Jean", "Alex", "Sam"]
+test_scores = [100, 45, 50, 87, 1]
+top_student_index = 0
+Passes = 0
+
+user_input = input("Enter student to find: ")
+found = False
+for counter in range(len(student_names)):
+    if student_names[counter] == user_input:
+        print(student_names[counter], " has test score ", test_scores[counter])
+        found = True
+
+if not found:
+    print("Student not found")
+
+
