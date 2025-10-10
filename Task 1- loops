@@ -1,0 +1,16 @@
+# Print my name ten times
+for i in range(10):
+    print("Emmie")
+# ask for my name
+name = input("What is your name? ")
+print("Hello, " + name)
+# print my name 1000 times
+for i in range (1000):
+    print("Emmie")
+# ask my name and the say hello + my name 1000 times
+name = input("What should I call you?")
+for i in range (1000):
+    print("Hello, " + name)
+# calculate the 7 times table up to 12
+for i in range(1, 13):
+    print(str(7) + "x" + str(i) + "=" + str(8 * i))
